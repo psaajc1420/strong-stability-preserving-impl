@@ -1,0 +1,12 @@
+#!/bin/bash
+#SBATCH -A SMU-Math-6370 	# account name
+#SBATCH -J driver_omp_t15 	# job name
+#SBATCH -o t15_out.%j 		# output file
+#SBATCH -e t15_err.%j 		# error file
+#SBATCH -N 1 			# total nodes requested
+#SBATCH -n 1 			# total MPI tasks requested
+#SBATCH -p normal 		# queue name
+#SBATCH -t 00:10:00 		# total time requested <hh:mm:ss>
+
+export OMP_NUM_THREADS=15
+ibrun ./WENOConvergence.exe 300 300 S 

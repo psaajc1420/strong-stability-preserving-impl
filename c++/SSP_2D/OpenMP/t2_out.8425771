@@ -1,0 +1,11 @@
+TACC: Starting up job 8425771
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+
+ERK3 Method:
+	nx = 300
+	ny = 300
+	error = 1.24312e-06
+	testing time: 38.955
+ 
+TACC: Shutdown complete. Exiting.
